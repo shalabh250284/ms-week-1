@@ -19,7 +19,7 @@ def handle_requests():
 def start_cpu_stress():
     try:
         # Use subprocess.Popen() to run stress_cpu.py in a separate process
-        subprocess.Popen(['python', 'stress_cpu.py'])
+        subprocess.Popen(['python3', 'stress_cpu.py'])
     except Exception as e:
         return jsonify({'error': f'Failed to start CPU stress: {str(e)}'})
 
